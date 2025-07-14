@@ -1,118 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fragmento del Expreso Astral</title>
-    <style>
-        body {
-            background-color: #121218;
-            color: #EAEAEA;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 2rem 0;
-            background-image: url('https://i.ytimg.com/vi/Q4zY_8I3j4s/maxresdefault.jpg'); /* Fondo actualizado */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        .prompt-container {
-            background-color: rgba(24, 26, 33, 0.9);
-            border: 1px solid #4A5568;
-            border-radius: 10px;
-            padding: 2rem;
-            max-width: 600px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-            text-align: center;
-        }
-        h1 {
-            color: #F8E7A9;
-            font-size: 2rem;
-            border-bottom: 2px solid #F8E7A9;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-        }
-        .choices {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        .choice-button {
-            background-color: #384152;
-            color: #EAEAEA;
-            border: 1px solid #5A677D;
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background-color 0.3s, transform 0.2s;
-            text-align: left;
-            width: 100%;
-        }
-        .choice-button:hover {
-            background-color: #4A5568;
-            transform: translateY(-2px);
-        }
-        .choice-button strong {
-            color: #F8E7A9;
-        }
-        .result-box {
-            margin-top: 2rem;
-            padding: 1rem;
-            background-color: rgba(18, 18, 24, 0.7);
-            border-radius: 5px;
-            border: 1px dashed #4A5568;
-            color: #B0C4DE;
-            font-size: 1.1rem;
-            text-align: left;
-            line-height: 1.5;
-            min-height: 50px; /* Para que no colapse al estar vacío */
-            transition: opacity 0.5s;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Juego HTML</title>
 </head>
-<body>
-
-    <div class="prompt-container">
-        <h1>Eco del Bosque Petrificado</h1>
-        <p>
-            El Expreso Astral ha llegado al planeta Xylos, un mundo silencioso donde un bosque colosal ha quedado petrificado en el tiempo. Vuestros sensores detectan una fluctuación de energía anómala en el corazón del "Árbol Madre", una estructura cristalina tan alta que se pierde en la atmósfera violácea del planeta. En su interior, suspendido entre raíces de ámbar solidificado, yace el "Corazón del Bosque", un artefacto que emite un pulso rítmico y una luz tenue. El aire a su alrededor vibra con poder, y fragmentos de tiempo parecen congelarse y estallar a su alrededor. Es inestable. Debes tomar una decisión.
-        </p>
-        <div class="choices">
-            <button class="choice-button" onclick="showResult('<strong>[Resultado]</strong> Una resonancia potente pero inestable recorre tu cuerpo. Sientes cómo el poder del artefacto se sincroniza con tu Estelaron. El Corazón del Bosque reacciona violentamente y la energía cristaliza en el aire, formando criaturas hostiles. <strong>¡Prepárate para el combate!</strong>')">
-                <strong>[Vía de la Destrucción]</strong> Tocar el Corazón directamente. La energía debe ser confrontada y dominada.
-            </button>
-            <button class="choice-button" onclick="showResult('<strong>[Resultado]</strong> El Corazón emite un pulso suave en respuesta a tu análisis. En las raíces de ámbar se iluminan una serie de patrones complejos. Es un puzle, una cerradura cósmica que protege un poder ancestral. <strong>Has descubierto un acertijo para resolver.</strong>')">
-                <strong>[Vía de la Erudición]</strong> Usar los sensores del equipo para analizar los patrones de energía sin hacer contacto.
-            </button>
-            <button class="choice-button" onclick="showResult('<strong>[Resultado]</strong> Creas una barrera protectora alrededor del equipo. El Corazón parece calmarse bajo la influencia del escudo. Sin embargo, la súbita contención de energía ha actuado como una señal. Algo grande se mueve en la lejanía... <strong>una presencia externa ha detectado vuestra barrera y se acerca.</strong>')">
-                <strong>[Vía de la Conservación]</strong> Desplegar un escudo para estabilizarlo antes de interactuar. La seguridad es la prioridad.
-            </button>
-        </div>
-        <div id="result-text" class="result-box">
-            <!-- El resultado de tu elección aparecerá aquí -->
-        </div>
-    </div>
-
-    <script>
-        function showResult(text) {
-            const resultBox = document.getElementById('result-text');
-            resultBox.style.opacity = 0; // Efecto de desvanecimiento
-            setTimeout(() => {
-                resultBox.innerHTML = text;
-                resultBox.style.opacity = 1; // Efecto de aparición
-            }, 300);
-        }
-    </script>
-
+<body style="text-align: center; padding-top: 50px;">
+  <h1>¡Hola! Este es mi juego en HTML</h1>
+  <p>Si ves esto, todo está funcionando correctamente.</p>
 </body>
 </html>
+
